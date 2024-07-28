@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "analyze": "cross-env ANALYZE=true npm run build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -23,6 +24,9 @@
     "swr": "^2.2.2"
   },
   "devDependencies": {
-    "prisma": "^5.17.0"
+    "@next/bundle-analyzer": "^14.2.5",
+    "cross-env": "^7.0.3",
+    "prisma": "^5.17.0",
+    "webpack-bundle-analyzer": "^4.10.2"
   }
 }

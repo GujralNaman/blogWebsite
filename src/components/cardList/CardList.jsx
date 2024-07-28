@@ -12,9 +12,9 @@ const getData = async (page, cat) => {
     }
   );
 
-  if (!res.ok) {
-    throw new Error("Failed");
-  }
+  // if (!res.ok) {
+  //   throw new Error("Failed");
+  // }
 
   return res.json();
 };
